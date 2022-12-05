@@ -16,6 +16,9 @@ np.random.seed(12345)
 from google.colab import files
 upload = files.upload()
 
+data = pd.read_excel('set50_dataset.xlsx')
+data
+
 data.drop(['Date','Low_0'],axis=1 , inplace=True)
 data
 
